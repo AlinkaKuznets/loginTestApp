@@ -23,21 +23,21 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFE5E5E5),
-                  appBar: AppBar(
-                    title: Row(
-                      children: [
-                        Text(
-                          'Login',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(width: 8),
-                        Icon(Icons.person_outline),
-                      ],
-                    ),
-                  ),
+      appBar: AppBar(
+        title: Row(
+          children: [
+            Text(
+              'Login',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(width: 8),
+            Icon(Icons.person_outline),
+          ],
+        ),
+      ),
       body: BlocProvider(
         create: (_) => inj.postEmailCubit,
         child: BlocConsumer<PostEmailCubit, PostEmailState>(
@@ -97,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     ),
-      
+
                     SizedBox(
                       width: double.infinity,
                       child: LoginButton(
@@ -112,7 +112,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         title: 'Login',
                       ),
                     ),
-      
+
                     const SizedBox(height: 32),
                     Row(
                       children: [
