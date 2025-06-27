@@ -186,5 +186,3 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
-
-//linaolen6@mail.ru
